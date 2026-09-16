@@ -234,6 +234,24 @@
       font-size: 14px;
     }
 
+
+    .financing-banner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 36px clamp(22px, 4vw, 44px);
+      background: var(--soft-black);
+      border-bottom: 1px solid var(--line);
+      border-left: 4px solid var(--gold);
+    }
+    .financing-copy { flex: 1 1 280px; min-width: 0; }
+    .financing-banner h2 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 12px; }
+    .financing-description { color: var(--muted); margin: 0 0 10px; }
+    .financing-terms { color: var(--muted); font-size: 13px; margin: 0; }
+    .financing-banner .button { flex: 0 0 auto; }
+
     @media (max-width: 760px) {
       .nav {
         align-items: flex-start;
@@ -295,6 +313,16 @@
           </svg>
         </div>
       </div>
+    </section>
+
+    <section class="financing-banner" aria-labelledby="financing-title">
+      <div class="financing-copy">
+        <p class="section-label">Synchrony</p>
+        <h2 id="financing-title">Financing available through Synchrony.</h2>
+        <p class="financing-description">Explore financing for your auto repairs at Anchor Auto Repair.</p>
+        <p class="financing-terms">Subject to credit approval. See Synchrony for current terms and conditions.</p>
+      </div>
+      <a class="button primary" href="https://www.mysynchrony.com/mmc/CR245834605" target="_blank" rel="noopener noreferrer" aria-label="Apply Now with Synchrony (opens in a new tab)">Apply Now</a>
     </section>
 
     <section id="about">
